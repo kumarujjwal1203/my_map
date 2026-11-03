@@ -1,3 +1,5 @@
+@import "@arcgis/core/assets/esri/themes/light/main.css";
+
 html, body, #root {
   height: 100%;
   margin: 0;
@@ -6,4 +8,42 @@ html, body, #root {
 arcgis-map {
   height: 90vh;
   display: block;
+}
+
+/* Ensure ArcGIS Sign In modal and Username/Password inputs are fully visible with high contrast */
+.esri-identity-modal,
+calcite-dialog {
+  --calcite-color-foreground-1: #ffffff !important;
+  --calcite-color-text-1: #1e293b !important;
+  --calcite-color-text-2: #334155 !important;
+  --calcite-color-text-3: #64748b !important;
+  --calcite-color-border-input: #94a3b8 !important;
+  --calcite-color-background: #ffffff !important;
+  --calcite-color-brand: #0079c1 !important;
+  --calcite-color-text-inverse: #ffffff !important;
+  color: #1e293b !important;
+}
+
+calcite-dialog {
+  background-color: #ffffff !important;
+  color: #1e293b !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5) !important;
+  border-radius: 8px !important;
+}
+
+calcite-label {
+  color: #1e293b !important;
+  font-weight: 600 !important;
+}
+
+calcite-input {
+  --calcite-color-foreground-1: #ffffff !important;
+  --calcite-color-text-1: #0f172a !important;
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+}
+
+.esri-identity-modal__info {
+  color: #334155 !important;
+  font-size: 14px !important;
 }
